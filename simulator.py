@@ -373,11 +373,7 @@ def simulate(mongo_uri, db_name, collection_name, rounds=10):
     print("Tournament Results:")
     for email, score in leaderboard:
         print(f"{nameToScore[email]}: {email} : {score}")
-
-# Run the simulation
-mongo_uri = "mongodb+srv://gautam:CramersRule_24@cluster0.x7sgg65.mongodb.net/Simulator-LeaderBoard?retryWrites=true&w=majority&appName=Cluster0"
-db_name = "Simulator-LeaderBoard"
-collection_name = "users"
+ 
 
 simulate(mongo_uri, db_name, collection_name, rounds=50)
 
